@@ -1,0 +1,32 @@
+public class Main {
+    public static void main(String[] args) {
+
+        Cliente cliente = new Cliente();
+        cliente.edad = 29;
+        cliente.telefono = 302596087;
+        cliente.nombre = "Livan H";
+        cliente.credito = 750.000;
+        System.out.println(cliente.edad);
+        System.out.println(cliente.telefono);
+        System.out.println(cliente.nombre);
+        System.out.println(cliente.credito);
+    }
+    static class Persona   {
+
+        int edad;
+        String nombre;
+        int telefono;
+    }
+
+    static class Cliente extends Persona  {
+
+        double credito;
+    }
+     
+    static class Trabajador extends Persona{
+
+        Double salario;
+
+    }
+
+}
